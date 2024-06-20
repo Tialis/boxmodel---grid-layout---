@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-size: 2rem;
+            }
+            #container{
+                width: 1070px;
+                margin: 0 auto;
+                display: flex;
+                /*flex-direction: row;*/ /*todos os elementos numa única linha*/
+                flex-direction: column; /*todos os elementos numa única coluna*/
+            }
+
+                /*Uso da pseudoclasse :hover*/
+                #link:hover {
+                    color: rgb(255, 0, 0);
+                }
+
+                /*Uso do pseudoelemento ::first-line*/
+                #container-texto{
+                    padding: 20px;
+                    background-color: greenyellow;
+                    border: 30px solid #999;
+                    margin-top: 100px; ;
+                }
+
+                #container-texto::first-line {
+                    color: rgb(255, 0, 255);
+                    text-transform: uppercase;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>PseudoClasses</h1>
+            <a href="#" id="link">Link</a>
+
+            <h1>PseudoElemento</h1>
+            <p id="container-texto">
+                Jesus Cristo tem um efeito profundo e positivo na vida do ser humano. Ele traz esperança e
+                propósito, oferecendo um caminho de amor, compaixão e perdão. Seus ensinamentos incentivam a
+                prática da empatia, da caridade e do respeito ao próximo, promovendo a paz interior e um sentido
+                de comunidade. A fé em Jesus Cristo proporciona conforto em momentos de dificuldade e uma
+                fonte constante de força e inspiração. Em suma, sua influência transforma vidas, guiando as pessoas
+                a viverem de maneira mais plena e significativa.
+        </div>
+    </body>
+</html>
